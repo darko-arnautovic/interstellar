@@ -1,0 +1,36 @@
+.btn-primary {
+  background-color: $one;
+  border-color: $one;
+  color: $four;
+}
+
+.btn-primary:hover {
+  background-color: $one;
+  border-color: $one;
+  color: $four;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: $one;
+  border-color: $one;
+  color: $four;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba($color: $one, $alpha: 0.5);
+  background-color: $one;
+  border-color: $one;
+  color: $four;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: $one;
+  border-color: $one;
+  color: $four;
+  cursor: not-allowed;
+  pointer-events: none;
+}

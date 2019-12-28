@@ -1,27 +1,45 @@
-# Interstellar
+# Interstellar SpaceWays
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
-## Development server
+The Interstellar Spaceways application has been developed to present planetary node distancing information in a conceptual UI by Darko Arnautovic as a Discovery Angular / Front End Developer assessment task.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+It has been built using the Angular CLI, and utilises the following Libraries & Technologies:
 
-## Code scaffolding
+- [Bootstrap V4](https://getbootstrap.com/)
+- [Animate.css](https://daneden.github.io/animate.css/)
+- [Google Fonts](https://fonts.google.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Bootstrap & Animate have been downloaded manually and added to the assets folder, then loaded via the index file. This is to aid in keeping the bundle size down of the generated build. AM Charts has been added as an npm package.
 
-## Build
+### Tech
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The Interstellar Spaceways App allows the user to view the fastest route between planets.
 
-## Running unit tests
+To achieve this, it uses a list of planets and routes stored in the assets folder and loaded on view initialization. Once the data has been loaded, it is passed through a simplified application of the Dijkstra algorithm. The least expensive route is returned to the user. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+Interstellar Spaceways requires [Node.js](https://nodejs.org/) v4+ as well as [Angular CLI](https://github.com/angular/angular-cli) v8+ to run.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Install the dependencies and start the server.
 
-## Further help
+```sh
+$ cd interstellar
+$ npm install
+$ ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Inspiration
+
+In order to present a UI driven by imagery and colours, various portals and tools were used to craft an idea, and ones that sparked the right creative notes have been included below:
+
+| Source | Link |
+| ------ | ------ |
+| Undraw | https://undraw.co/search |
+| Dribbble | https://dribbble.com/shots/2411149-Weather-Icons-Presentation |
+| Coolors | https://coolors.co/dc417b-0b1430-000000-ffffff-494949 |
+
+Thank you for the opportunity to complete this assessment for you. 
+
+Darko.

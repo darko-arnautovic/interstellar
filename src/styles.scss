@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'theme';
+@import '~@ng-select/ng-select/themes/default.theme.css';
+
+html {
+  background: url('assets/svg/back.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  background: none;
+
+  @media (max-width: 991.98px) {
+    padding: 10px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.has-background {
+  background-color: rgba($color: #fff, $alpha: 0.95);
+}
+
+.progress-block {
+  background-color: rgba($color: #0b1430, $alpha: 0.95);
+  font-size: 1.5rem;
+  color: #fff;
+
+  &.voting-summary {
+    font-size: 1rem !important;
+  }
+
+  hr {
+    height: 1px;
+    color: #fff;
+    background-color: #fff;
+    border: none;
+  }
+
+  @media (max-width: 767.98px) {
+    &.is-create {
+      display: none;
+    }
+  }
+}
+
+.step-list {
+  font-family: 'Oswald', serif;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0.4;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+
+  &.done {
+    color: #fff;
+    opacity: 1;
+  }
+
+  &.current {
+    color: #000;
+    opacity: 1;
+  }
+}
+
+i {
+  transition: all 2s ease;
+}
+
+.rotate {
+  transform: rotate(360deg);
+  transform-origin: 50% 50%;
+}
+
+.right-shadow {
+  box-shadow: inset -8px 0 9px -8px rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 767.98px) {
+    box-shadow: none;
+  }
+}
+
+.rounded-left {
+  @media (max-width: 767.98px) {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+}
+
+.rotated {
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.warning {
+  color: $one !important;
+}
